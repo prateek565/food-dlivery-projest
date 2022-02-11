@@ -1,0 +1,66 @@
+.options {
+    flex-direction: column;
+}
+.boxes {
+    border: 2px solid red;
+    border-radius: 4px;
+    margin: 14px 14px;
+    margin-bottom: 11px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.navbar {
+    display: flex;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    align-items: center;
+    flex-direction: column;
+}
+.navbar ul {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.home ::before {
+    content: " ";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: url(bg1.jpg) no-repeat center center/cover;
+    height: 492px;
+    z-index: -1;
+    width: 100%;
+}
+.companies{
+    flex-wrap: wrap;
+}
+.logos {
+    width: 78px;
+}
+input[type="text"] {
+    margin: 2px;
+    width: auto;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 2px 9px;
+    background-color: rgb(134, 255, 110);
+}
+p, h2 {
+    font-size: 13px;
+    text-align: center;
+}
+.home h1 {
+    color: white;
+    padding: 3px 8px;
+}
+@media screen and (max-width:500px) {
+    .home{
+        margin-top: 24px;
+    }
+}
